@@ -1,0 +1,170 @@
+/* Main Container */
+.crud-app {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px 30px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.crud-app h2, .crud-app h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #34495e;
+}
+
+.crud-app input[type="text"], .crud-app input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 2px solid #dcdde1;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+.crud-app input[type="text"]:focus, .crud-app input[type="email"]:focus {
+  border-color: #3498db;
+  outline: none;
+  box-shadow: 0 0 8px rgba(52, 152, 219, 0.2);
+}
+
+/* Buttons */
+.crud-app button {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.crud-app button:hover {
+  background-color: #2980b9;
+}
+
+.crud-app button:active {
+  transform: scale(0.98);
+}
+
+/* Reset Button */
+.crud-app .reset-btn {
+  background-color: #f39c12;
+}
+
+.crud-app .reset-btn:hover {
+  background-color: #e67e22;
+}
+
+/* User List */
+.crud-app ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.crud-app ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #f0f3f4;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  transition: background-color 0.2s ease;
+}
+
+.crud-app ul li:hover {
+  background-color: #ecf0f1;
+}
+
+.crud-app .actions button {
+  background-color: #e74c3c;
+  margin-left: 10px;
+  padding: 8px 12px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.crud-app .actions button:hover {
+  background-color: #c0392b;
+}
+
+/* Error Message */
+.crud-app .error {
+  color: #e74c3c;
+  font-size: 14px;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+/* Search Box */
+.crud-app input[type="text"]::placeholder {
+  font-size: 14px;
+  color: #7f8c8d;
+}
+
+.crud-app input[type="text"],
+.crud-app input[type="email"] {
+  transition: all 0.3s ease;
+  margin-bottom: 15px;
+}
+
+/* Search and Sort Buttons */
+.crud-app .search-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.crud-app input[type="text"].search-input {
+  width: 75%;
+  padding: 10px;
+  border: 2px solid #dfe6e9;
+  border-radius: 5px;
+}
+
+.crud-app button.sort-btn {
+  width: 20%;
+  background-color: #2ecc71;
+}
+
+.crud-app button.sort-btn:hover {
+  background-color: #27ae60;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .crud-app {
+    padding: 20px;
+  }
+
+  .crud-app button, .crud-app .reset-btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .crud-app .search-container {
+    flex-direction: column;
+  }
+
+  .crud-app input[type="text"].search-input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .crud-app button.sort-btn {
+    width: 100%;
+  }
+}
